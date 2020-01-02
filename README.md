@@ -44,9 +44,8 @@ components目录：组件文件存放目录
 	:style=""必选用双引号包起来，如果其他字符用单引号（反过来用报错）
 ```
 
-4. 组件内无法import其他js文件方法
 
-5. base64图片在传输中会加入回车，赋值前从计算属性重新替换下
+4. base64图片在传输中会加入回车，赋值前从计算属性重新替换下
 ```
 	computed:{
 		captchaSrc(){
@@ -54,9 +53,9 @@ components目录：组件文件存放目录
 		}
 	},
 ```
-6. 如果删除或者修改文件  最好重新运行，不然可能会导致文件不存在错误
+5. 如果删除或者修改文件  最好重新运行，不然可能会导致文件不存在错误
 
-7. input封装时，外层用v-model绑定后，如果要改变子组件input的值，需要用$nextTick
+6. input封装时，外层用v-model绑定后，如果要改变子组件input的值，需要用$nextTick
 ```
 	this.$nextTick(function(){
 		this.inputVal = 'xxxxx';
